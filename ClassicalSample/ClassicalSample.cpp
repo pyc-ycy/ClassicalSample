@@ -3,7 +3,9 @@
 
 #include <iostream>
 #include "Test.h"
+#include "SetOne.h"
 
+// 有1、2、3、4个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？
 void example1()
 {
 	cout << "有1、2、3、4个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？" << endl;
@@ -75,7 +77,6 @@ int main()
 	t3.setArr(a, 5);
 	t1.display();
 	t2.display();
-	t3.display();
-	example1();*/
-	example2();
+	t3.display();*/
+	example4();
 }

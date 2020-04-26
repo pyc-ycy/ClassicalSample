@@ -105,6 +105,7 @@ void example6()
 	printf(" * \n");
 	printf(" ****\n");
 }
+// 乘法表
 void example7()
 {
 	int i, j, result;
@@ -117,5 +118,27 @@ void example7()
 			printf("%d*%d=%-3d", i, j, result); /*-3d表示左对齐，占3位*/
 		}
 		printf("\n"); /*每一行后换行*/
+	}
+}
+void example8()
+{
+	char a = 176, b = 219;
+	printf("%c%c%c%c%c\n", b, a, a, a, b);
+	printf("%c%c%c%c%c\n", a, b, a, b, a);
+	printf("%c%c%c%c%c\n", a, a, b, a, a);
+	printf("%c%c%c%c%c\n", a, b, a, b, a);
+	printf("%c%c%c%c%c\n", b, a, a, a, b);
+}
+// 输出国际象棋棋盘。
+void example9()
+{
+	int i, j;
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+			if ((i + j) % 2 == 0)
+				printf("%c%c", 219, 219);
+			else printf("  ");
+		printf("\n");
 	}
 }

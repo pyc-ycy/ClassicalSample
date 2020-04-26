@@ -79,4 +79,5 @@ int main()
 	t2.display();
 	t3.display();*/
 	example6();
+	example7();
 }

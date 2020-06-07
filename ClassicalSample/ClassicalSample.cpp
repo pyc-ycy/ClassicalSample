@@ -66,20 +66,9 @@ void example2()
 
 	printf("\n");
 }
-int main()
+
+void practiceHorse()
 {
-	/*char a[5] = "abcd";
-	Test t1, t2(12, 13), t3(2, 3, "Demo class");
-	t1.setA(3);
-	t1.setB(6);
-	t1.setStr("C++ programing");
-	t1.setArr(a, 5);
-	t2.setArr(a, 5);
-	t3.setArr(a, 5);
-	t1.display();
-	t2.display();
-	t3.display();*/
-	//example6();
 	WhiteHorse wh;
 	string horseColor;
 	wh.setWeight(300);
@@ -106,4 +95,20 @@ int main()
 		<< "age of gh:" << gh.getAge() << endl;
 	gh.setColor("gray");
 	cout << "After use setColor,color of gh:" << gh.getColor() << endl;
+}
+int main()
+{
+	/*char a[5] = "abcd";
+	Test t1, t2(12, 13), t3(2, 3, "Demo class");
+	t1.setA(3);
+	t1.setB(6);
+	t1.setStr("C++ programing");
+	t1.setArr(a, 5);
+	t2.setArr(a, 5);
+	t3.setArr(a, 5);
+	t1.display();
+	t2.display();
+	t3.display();*/
+	//example6();
+	practiceHorse();
 }

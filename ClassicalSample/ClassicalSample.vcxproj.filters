@@ -29,5 +29,8 @@
     <ClInclude Include="SetOne.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Horse.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

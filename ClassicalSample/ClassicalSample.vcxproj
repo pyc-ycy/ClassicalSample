@@ -151,6 +151,7 @@
     <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Horse.h" />
     <ClInclude Include="SetOne.h" />
     <ClInclude Include="Test.h" />
   </ItemGroup>

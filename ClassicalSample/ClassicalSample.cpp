@@ -4,6 +4,7 @@
 #include <iostream>
 #include "Test.h"
 #include "SetOne.h"
+#include "Horse.h"
 
 // 有1、2、3、4个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？
 void example1()
@@ -78,5 +79,31 @@ int main()
 	t1.display();
 	t2.display();
 	t3.display();*/
-	example6();
+	//example6();
+	WhiteHorse wh;
+	string horseColor;
+	wh.setWeight(300);
+	wh.setSpeed(100);
+	horseColor = wh.getColor();
+	cout << "the color of white horse is:" << horseColor << endl;
+	cout << "the weight of white horse is:" << wh.getWeight() << endl;
+	cout << "the speed of white horse is:" << wh.getSpeed() << endl;
+	HorseColor* bh;
+	bh = &wh;
+	bh->setColor("blue");
+	cout << "the color of blue horse is:" << bh->getColor() << endl;
+	BlackHorse blackHorse(250, 150, 3);
+	cout << "=========================" << endl;
+	cout << "the color of black horse is:" << blackHorse.getColor() << endl;
+	cout << "the weight of black horse is:" << blackHorse.getWeight() << endl;
+	cout << "the speed of black horse is:" << blackHorse.getSpeed() << endl;
+	cout << "the age of black horse is:" << blackHorse.getAge() << endl;
+	BlackHorse gh(240, 150, 2, "green");
+	cout << "=======================" << endl;
+	cout << "color of gh:" << gh.getColor() << endl
+		<< "weight of gh:" << gh.getWeight() << endl
+		<< "speed of gh:" << gh.getSpeed() << endl
+		<< "age of gh:" << gh.getAge() << endl;
+	gh.setColor("gray");
+	cout << "After use setColor,color of gh:" << gh.getColor() << endl;
 }
